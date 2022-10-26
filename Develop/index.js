@@ -9,7 +9,7 @@ const fs = require("fs");
 
 // TODO: Create a function to initialize app
 function init() {
-    const questions = inquirer.prompt([
+    inquirer.prompt([
         {
             type: "input",
             name: "q0",
@@ -36,7 +36,7 @@ function init() {
             message: "What problem does this solve?" 
         }
     ]).then((data) => {
-        const output = `# ${data['q0']}\n\n## Project Description\n\n${data['q1']}${data['q2']}\n\n${data['q3']}\n\n${data['q4']}\n\n## Credits: Christopher Armstrong`
+        const output = `# ${data['q0']}\n\n## Project Description\n\n${data['q1']}\n\n${data['q2']}\n\n${data['q3']}\n\n${data['q4']}\n\n## Credits: Christopher Armstrong`
 
         fs.writeFile("README.md", (output), (err) => 
         {
