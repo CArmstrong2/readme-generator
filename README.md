@@ -1,3 +1,11 @@
-# Professional README Generator Starter Code
+# Readme Generation Helper
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+## Project Description
+
+I created this tool to cut down on repetitive creation of similarly-formatted README files.
+
+While creating this tool, I furthered my understanding of Inquirer and FS packages.
+
+This tool helps to standardize README file format and allows for streamlined creation.
+
+## Credits: Christopher Armstrong
